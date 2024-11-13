@@ -1,0 +1,10 @@
+development:
+  dialect: postgres
+  datasource: test.db
+  dir: migrations
+
+production:
+  dialect: postgres
+  datasource: dbname=teqlocal sslmode=disable
+  dir: migrations
+  table: migrations
